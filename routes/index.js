@@ -14,21 +14,24 @@ router.get('/midia' , function(req, res) {
 
 
 
-/* GET New Creator page. */
+//* GET New Creator page. */
 router.get('/newcreator', function(req, res) {
   var db = req.db;
-  var collection = db.get('newCreator');
-  collection.find({},{},function(e,docs){
-  res.render('/newcreator', { title: 'Do you know a Creator?' });
-  'New Creator' : docs
-      });
+  var collection = db.get('userCollection');
+  collection.find({}, function(e,docs){
+
+res.render('/newcreator', { 
+  title: 'Do you know a Creator?', 
+  userDocuments: docs
+       });
     });
-  });
+});
 
 
 /* GET New Midia page. */
 router.get('/newMidia', function(req, res) {
-  res.render('newMidia', { title: 'Provide New Midia for the world' });
+res.render('newMidia', { title: 'Provide New Midia for the world' 
+});
 });
 
 /* POST to New Creator page */
@@ -37,7 +40,7 @@ router.post('/newcreator', function(req, res) {
   // Set our internal DB variable
   var db = req.db;
 
-  // Get our form values. These rely on the "name" attributes
+// Get our form values. These rely on the "name" attributes
   var inputCreator = req.body.inputCreator;
   var inputTitle = req.body.inputTitle;
   var inputType = req.body.inputType;
@@ -46,17 +49,17 @@ router.post('/newcreator', function(req, res) {
   var inputDate = req.body.inputDate;
 
   // Set our collection
-  var collection = db.get('newcreator');
+  var collection = db.get('userCollection');
 
   // Submit to the DB
-  collection.insert({
+    collection.insert({
       "Creator" : inputCreator,
       "Content Title" : inputTitle,
       "Media Type" : inputType,
       "Website" : inputWebsite,
       "Description" : inputDescription,
       "Upload Date" : inputDate,
-  }, function (err, doc) {
+      }, function (err, doc) {
       if (err) {
           // return error
           res.send("There was a problem adding this creator to Midia.");
@@ -75,12 +78,11 @@ router.post('/newcreator', function(req, res) {
 router.post('/newMidia', function(req, res) {
 
   // Set internal DB variable
-  var db = req.db;
+var db = req.db;
 
  
  // Get form values.
- 
- var inputTitle = req.body.inputTitle;
+var inputTitle = req.body.inputTitle;
  var inputCreator = req.body.inputCreator;
  var inputType = req.body.inputType;
  var inputWebsite = req.body.inputWebsite;
@@ -88,7 +90,7 @@ router.post('/newMidia', function(req, res) {
  var inputDate = req.body.inputDate;
 
   // Set collection
-  var collection = db.get('newMidia');
+  var collection = db.get('userCollection');
 
   // Submit to the DB
   collection.insert({
