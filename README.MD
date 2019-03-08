@@ -6,7 +6,7 @@ WDI-CC-6 Project #2: Node/Express/MongoDB Full-stack CRUD Application
 MIDIA- a roof for the creative.
 
 
-Midia is an application that allows writers, content creators, and thinkers share and recommend the creative endeavors they produce and love.
+Midia is an application that allows writers, content creators, and thinkers to share and recommend the creative endeavors they produce and love.
 
 
 
