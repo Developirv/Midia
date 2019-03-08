@@ -40,7 +40,7 @@ MongoDB Mongoose Express Node JS EJS Heroku
 
 Getting Started:
 
-Heroku: https://comtent.herokuapp.com/ ** REPLACE ** THIS IS OLD LINK FOR COMTENT
+Heroku: https://midia.herokuapp.com
 
 Trello board: https://trello.com/b/IxMV9u8X/midia
 
