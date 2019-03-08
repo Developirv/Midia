@@ -42,7 +42,7 @@ Getting Started:
 
 Heroku: https://comtent.herokuapp.com/
 
-Trello board: https://trello.com/b/IxMV9u8X/class-project-2
+Trello board: https://trello.com/b/IxMV9u8X/midia
 
 Unsolved problems (if any):
 
