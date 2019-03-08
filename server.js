@@ -2,13 +2,17 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+
+var session = require('express-session');
 var logger = require('morgan');
+var passport = require('passport');
+var methodOverride = require('method-override');
 
 var monk = require('monk');
 var db = monk('localhost:3000/newcreator');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var usersRouter = require('./routes/creators');
 
 var app = express();
 
@@ -16,6 +20,10 @@ var app = express();
 // load the env 
 require('dotenv').config();
 
+// connect to the MongoDB 
+require('./config/database');
+// configure Passport
+require('./config/passport');
 
 
 // view engine setup
@@ -27,8 +35,21 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(methodOverride('_method'));
 
-// Make db accessible to router
+
+// Mounting middleware
+
+app.use(session({
+  secret: 'jGxPIHo5-S58mSWOM7jukRO2',
+  resave: false,
+  saveUninitialized: true
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Make db accessible
 app.use(function(req,res,next){
   req.db = db;
   next();
