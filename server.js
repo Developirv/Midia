@@ -12,7 +12,7 @@ var monk = require('monk');
 var db = monk('localhost:3000/newcreator');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/creators');
+var creatorsRouter = require('./routes/creators');
 
 var app = express();
 
@@ -56,7 +56,7 @@ app.use(function(req,res,next){
 });
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/creators', creatorsRouter);
 
 
 // catch 404 and forward to error handler

@@ -82,7 +82,7 @@ var db = req.db;
 
  
  // Get form values.
-var inputTitle = req.body.inputTitle;
+ var inputTitle = req.body.inputTitle;
  var inputCreator = req.body.inputCreator;
  var inputType = req.body.inputType;
  var inputWebsite = req.body.inputWebsite;
