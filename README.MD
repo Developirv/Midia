@@ -13,7 +13,7 @@ Midia is an application that allows writers, content creators, and thinkers to s
 A creator can recommend or add content they feel the world should see, creating a "Midia Tent" by either 'Adding a Creator or 'Adding New Midia'.
 
 
-A user can add content they want others to discover and search for content creators recommend.
+A user can add content they want others to discover and search for content that other creators recommend.
 
 
 If you enjoy a creator's Midia tent, you can browse to see what recommendations that creator has outside of their own Midia.
