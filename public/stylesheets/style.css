@@ -1,0 +1,89 @@
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 14px;
+  font-style: oblique;
+  text-decoration: gold;
+}
+
+
+h3{
+  color: white;
+ text-align: center;
+ font-size: 28px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 50px;
+  color: whitesmoke;
+  background-color: #0C69EB;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+form {
+  padding: 50px;
+  color: whitesmoke;
+  background-color: #0C69EB;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+script {
+  object-fit: center;
+  object-position: center;
+}
+
+title {
+  align-content: center;
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}
+
+img {
+  align-content: center;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  padding-left: 600px;
+  
+}
+
+.logo {
+  align-content: center;
+}
+
+footer {
+  background-color:#0C69EB;
+  color: white;
+  font-size: 8px;
+  text-align: center;
+  align-content: center;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.logo {
+  background-position: center;
+  padding: 4px;
+  color:white;
+  font-size: 20px;
+  background-color: lightblue;
+  align-items: center;
+}
+
+.creator {
+  position: relative;
+  align-content: center;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 2px;
+}
