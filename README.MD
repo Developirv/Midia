@@ -3,14 +3,14 @@ WDI-CC-6 Project #2: Node/Express/MongoDB Full-stack CRUD Application
 (Formerly ComTent/ConTent.)
 
 
-MIDIA- a roof for the creative.
+MiDIA- a roof for the creative.
 
 
-Midia is an application that allows writers, content creators, and thinkers to share and recommend the creative endeavors they produce and love.
+MiDIA is an application that allows writers, content creators, and thinkers to share and recommend the creative endeavors they produce and love.
 
+Once the user has arrived at the application, they will be asked to authenticate their identity to allow for access.
 
-
-A creator can recommend or add content they feel the world should see, creating a "Midia Tent" by either 'Adding a Creator or 'Adding New Midia'.
+Once sucessfully signed in, a creator can recommend or add content they feel the world should see, creating a "Midia Tent" for that project by either 'Adding a Creator or 'Adding New Midia'.
 
 
 A user can add content they want others to discover and search for content that other creators recommend.
