@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title><%= title %></title>
+    <h1>Provide New Midia for the world.</h1>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  
+  <body>
+    <h1><%= title %></h1>
+  
+        <form id="formAddMidia" name="addMidia" method="post" action="/newMidia" >  
+          <input id="inputTitle" type="text" placeholder="Title" name="Content Title" />
+          <input id="inputCreator" type="text" placeholder="Creator" name="Creator" />
+          <input id="inputType" type="text" placeholder="Media Type" name="Media Title" />
+          <input id="inputWebsite" type="text" placeholder="Website" name="Website"/>
+          <input id="inputDescription" type="text" placeholder="Description" name="Description"/>
+          <input id="inputDate" type="date" placeholder="Date" name="Upload Date"/>
+        </form>
+  
+        <div class="container">
+        <div class="jumbotron">
+        <img src="/images/image1.png" height="42" width="42">
+        <h3> Add to their MiDIA Tent</h3>
+        </div>
+        </div>
+      <script src="/routes/creators.js"></script>
+  </body>
+
+</html>
